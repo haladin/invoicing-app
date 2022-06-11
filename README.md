@@ -37,12 +37,14 @@ cd backend
 ./gradlew bootRun
 ```
 
-### 3.1. Starting front separately  
+### 3.1. Starting frontend separately  
 
 ```
 cd invoicing_app
 ng serve
 ```
+
+By default angular is hosting application on port 4200
 
 ## 4. Using Docker
 
