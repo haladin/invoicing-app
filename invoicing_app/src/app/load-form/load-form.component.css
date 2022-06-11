@@ -1,0 +1,14 @@
+.alert .close {
+    float: right;
+}
+
+.alert span {
+    vertical-align: top;
+    line-height: normal;
+}
+
+.alert>div:after {
+    clear: both;
+    content: '';
+    display: table;
+}

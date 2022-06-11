@@ -1,0 +1,18 @@
+<table class="table table-striped table-hover">
+  <thead class="thead-dark">
+    <tr>
+      <th scope="col">Customer</th>
+      <th scope="col">Vat number</th>
+      <th scope="col">Total</th>
+      <th scope="col">Currency</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let customer of total">
+      <th scope="row">{{ customer.customerName }}</th>
+      <td>{{ customer.customerVat }}</td>
+      <td>{{ customer.total }}</td>
+      <td>{{ customer.currency }}</td>
+    </tr>
+  </tbody>
+</table>
