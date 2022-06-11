@@ -59,10 +59,12 @@ or using the script:
 
 ## 5. Using only API 
 
-API can be tested with following curl command:
+API can be tested with following curl example:
 ```
 curl --location --request POST 'localhost:8080/api/invoices/' \
 --form 'file=@"./data.csv"' \
 --form 'currencies="EUR:1,USD:0.94,GBP:1.17,BGN:0.51"' \
 --form 'outputCurrency="GBP"'
 ```
+
+Optional property `--form 'filterByVat="1234"'`
