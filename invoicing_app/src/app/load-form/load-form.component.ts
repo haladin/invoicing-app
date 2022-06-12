@@ -19,9 +19,9 @@ export class LoadFormComponent implements OnInit {
   total = Array<TotalPerCustomer>();
 
   form = new FormGroup({
-    currencies: new FormControl('EUR:1,USD:0.94,GBP:1.17,BGN:0.51', Validators.required),
-    outputCurrency: new FormControl('GBP', Validators.required),
-    filterByVat: new FormControl(0),
+    currencies: new FormControl('', Validators.required),
+    outputCurrency: new FormControl('', Validators.required),
+    filterByVat: new FormControl(),
     file: new FormControl(null)
   });
 
@@ -91,11 +91,11 @@ export class LoadFormComponent implements OnInit {
 
   validate(): boolean {
     if (!this.form.get('currencies')?.value){
-      this.message = "Currencies rates are required field!"
+      this.message = "Currencies rates are required!"
       return false;
     }
     if (!this.form.get('outputCurrency')?.value){
-      this.message = "Output currency is required field!"
+      this.message = "Output currency is required!"
       return false;
     }
 
